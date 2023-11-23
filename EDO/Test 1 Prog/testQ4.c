@@ -13,4 +13,3 @@ void main()
 	int valbrutcptDS1820;
 	int infosigne, infovaleurentier, infovaleurdemi, valeurtemp;
 }
-TTTTTTT
