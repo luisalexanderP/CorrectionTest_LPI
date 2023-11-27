@@ -8,8 +8,6 @@ Date:	02.11.2023
 #define TEST1_PROG_H
 
 //librairies standart//
-#include <stdint.h> //type normalise
-#include<stdio.h> //entre sortie
 
 //constante numerique//
 
