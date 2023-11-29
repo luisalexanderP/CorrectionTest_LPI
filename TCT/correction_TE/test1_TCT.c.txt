@@ -29,5 +29,5 @@ void main()
 	
 	ValeurEntier = ValeurBrutDS1220 & 0x00FF >> 1; //décalage de 1 pour enlever la valeur décimale
 	
-	ValeurTemperature = SigneValeurBrut * (ValeurArrondieAuDemi + ValeurEntier);
+	ValeurTemperature = (float)SigneValeurBrut * (ValeurArrondieAuDemi + ValeurEntier);
 }
