@@ -27,8 +27,8 @@ void main()
 		{
 			infosigne = 1;
 		}
-		infovaleurdemi = valbrutcptDS1820 && 0x0001 * 0.5;
-		infovaleurentier = valbrutcptDS1820 && 0x00FF >> 1;
+		infovaleurdemi = (valbrutcptDS1820 && 0x0001) * 0.5;
+		infovaleurentier = (valbrutcptDS1820 && 0x00FF) >> 1;
 		valeurtemp = infosigne * infovaleurdemi + infovaleurentier;
 	}
 }
