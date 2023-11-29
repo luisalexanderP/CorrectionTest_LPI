@@ -2,33 +2,36 @@
 Lieu:	ETML-ES
 Auteur:	Etienne De OLiveira
 Date:	02.11.2023
+Modification: 29.11.2023
+correction du code
 */
 
 //include//
 #include "testQ4.h"
 #include <stdint.h> //type normalise
-#include<stdio.h> //entre sortie
+#include <stdio.h> //entre sortie
 
 //Programme principale//
 void main()
 {
-	int valbrutcptDS1820;
-	int infosigne, infovaleurentier, infovaleurdemi, valeurtemp;
+	int16_t InfoSigne;
+	int8_t ValeurTemp;
+	int8_t InfoValeurEntier;
+	float InfoValeurDemi;
 	
 	while (1)
 	{
-		valbrutcptDS1820 = 0xFF33;
-		infosigne = valbrutcptDS1820 >> 8;
-		if (infosigne == 0xFF)
+		InfoSigne = valbrutcptDS1820 >> 8;
+		if (InfoSigne == 0xFF)
 		{
-			infosigne = -1;
+			InfoSigne = -1;
 		}
 		else
 		{
-			infosigne = 1;
+			InfoSigne = 1;
 		}
-		infovaleurdemi = (valbrutcptDS1820 && 0x0001) * 0.5;
-		infovaleurentier = (valbrutcptDS1820 && 0x00FF) >> 1;
-		valeurtemp = infosigne * infovaleurdemi + infovaleurentier;
+		InfoValeurDemi = (valbrutcptDS1820 & 0x0001) * 0.5;
+		InfoValeurEntier = (valbrutcptDS1820 & 0x00FF) >> 1;
+		ValeurTemp = InfoSigne * (InfoValeurDemi + InfoValeurEntier);
 	}
 }
