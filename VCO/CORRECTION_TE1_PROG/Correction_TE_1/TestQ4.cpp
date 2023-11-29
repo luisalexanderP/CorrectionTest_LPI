@@ -30,7 +30,7 @@ int main() {
         infoValeurEntier = (valBrutCPTDS1820 & 0x00FF) >> 1;
         valeurTemp = infoSigne * (infoValeurDemi + infoValeurEntier);
 
-        // Affichage des variables
+        // Affichage des variables         Ceci est en C++, dû le projet en .cpp -> j'ai uniquement écrit en dur ^le "printf" car mon débug ne fonctionnait pas, j'ai donc print la valeur des variables à chaque fois
         std::cout << "InfoSigne: " << infoSigne << std::endl;
         std::cout << "ValBrutCPTDS1820: " << valBrutCPTDS1820 << std::endl;
         std::cout << "InfoValeurDemi: " << infoValeurDemi << std::endl;
