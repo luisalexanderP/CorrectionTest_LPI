@@ -1,0 +1,6 @@
+﻿  question2_test.c
+C:\Users\luisp\Downloads\question2_test.c(9,17): warning C4473: 'scanf_s' : nombre insuffisant d'arguments passés pour la chaîne de format
+C:\Users\luisp\Downloads\question2_test.c(9,17): message : les espaces réservés et leurs paramètres attendent des arguments 2 variadiques, mais des arguments 1 ont été fournis
+C:\Users\luisp\Downloads\question2_test.c(9,17): message : l'argument variadique manquant 2 est demandé par la chaîne de format '%c'
+C:\Users\luisp\Downloads\question2_test.c(9,17): message : cet argument est utilisé comme taille de mémoire tampon
+  questiontest.vcxproj -> C:\Users\luisp\OneDrive - Education Vaud\Bureau\PROG LUIS\questiontest\Debug\questiontest.exe
